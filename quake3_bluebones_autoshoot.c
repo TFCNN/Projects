@@ -11,6 +11,9 @@
     
     Original release:
     https://github.com/Quake3Aimbot/Perceptron-Autoshoot/blob/master/desperate.c
+    
+    Network described here:
+    https://medium.com/swlh/training-a-neural-network-to-autoshoot-in-fps-games-e105f27ec1a0
 
     Tested using the ioQuake3 client.
     https://ioquake3.org/

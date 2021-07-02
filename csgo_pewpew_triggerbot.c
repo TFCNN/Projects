@@ -245,7 +245,7 @@ int main(int argc, char *argv[])
     
     while(1)
     {
-        // loop every 10 ms (1,000 microsecond = 1 millisecond)
+        // loop every SCAN_DELAY ms (1,000 microsecond = 1 millisecond)
         usleep(SCAN_DELAY);
 
         // bot toggle
@@ -385,7 +385,7 @@ int main(int argc, char *argv[])
                 {
                     tc++;
 
-                    // did we activate enough time in a row to be sure this is a target?
+                    // did we activate enough times in a row to be sure this is a target?
                     if(tc > REPEAT_ACTIVATION)
                     {
                         // fire off as many shots as we need to

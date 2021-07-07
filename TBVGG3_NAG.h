@@ -400,10 +400,11 @@ float TBVGG3_NormalRandom() // Box Muller
 
 float TBVGG3_UniformRandom()
 {
+    static const float rmax = (float)RAND_MAX;
     float pr = 0;
     while(pr == 0) //never return 0
     {
-        const float rv2 = ( ( (((float)rand())+1e-7) / (float)RAND_MAX ) * 2 ) - 1;
+        const float rv2 = ( ( (((float)rand())+1e-7) / rmax ) * 2 ) - 1;
         pr = roundf(rv2 * 100) / 100; // two decimals of precision
     }
     return pr;
